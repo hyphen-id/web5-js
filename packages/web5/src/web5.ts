@@ -52,6 +52,8 @@ export class Web5 {
     this.#connectedDid = options.connectedDid;
     this.dwn = new DwnApi(options.web5Agent, this.#connectedDid);
     this.appStorage ||= new AppStorage();
+
+    console.log('[TEST]');
   }
 
   static async connect(options: Web5ConnectOptions = {}) {
